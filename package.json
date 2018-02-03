@@ -1,0 +1,30 @@
+{
+  "name": "appscan-static-analyzer",
+  "version": "1.0.0",
+  "description": "Node package that creates needed files (.ppf and .paf) to proceed with a scan in AppScan Source for node applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesinrm/appscan-static-analyzer.git"
+  },
+  "keywords": [
+    "appscan",
+    "ppf",
+    "paf",
+    "source-analysis"
+  ],
+  "author": "César Rodríguez <cesar.rodriguez.medina@ibm.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/cesinrm/appscan-static-analyzer/issues"
+  },
+  "homepage": "https://github.com/cesinrm/appscan-static-analyzer#readme",
+  "dependencies": {
+    "shell-escape": "^0.2.0",
+    "xmlbuilder": "^9.0.4",
+    "graceful-fs": "^4.1.11"
+  }
+}
