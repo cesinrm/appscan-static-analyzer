@@ -9,7 +9,25 @@ Nowadays, this only generates the files without exclusions. So AppScan will scan
 
 ## Usage
 
-Copy executable to your node application's root folder and then just run ./nodeAppScan(Linux/Mac/Windows)
+Copy executable to your node application's root folder and then just run:
+
+### Linux
+
+```
+  linux/node_app $ ./nodeAppScan
+```
+
+### Macos
+
+```
+  macos/node_app $ ./nodeAppScan
+```
+
+### Windows
+
+```
+  c:/win/node_app > nodeAppScan.exe
+```
 
 ### Technologies
 
