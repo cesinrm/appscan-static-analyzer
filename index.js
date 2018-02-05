@@ -1,7 +1,7 @@
 "use strict";
 
-
-  //var sys = require('cmd');
+  var builder = require('xmlbuilder');
+  var fs = require('graceful-fs');
   /*
   * Extract all dependencies until 2nd level and generate a file with them
   *
@@ -14,22 +14,16 @@
     var dependencyListFormated = shellescape (argsDependencyListFormated);
   }
   */
-  var builder = require('xmlbuilder');
-  var fs = require('graceful-fs');
-  var shellescape = require('shell-escape');
 
   var json = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
   var  appName = json.name;
-
-  var argPwd = ['pwd'];
-  var pwd = shellescape (argPwd);
-
+  var pwdLocation = __dirname;
   var xml = builder.create('root');
 
   var applicationObj = {
     'Application': {
       '@name': appName,
-      'Project': { '@language_type': '2', '@path': pwd }
+      'Project': { '@language_type': '2', '@path': pwdLocation }
     }
   }
 

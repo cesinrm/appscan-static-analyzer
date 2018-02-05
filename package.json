@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/cesinrm/appscan-static-analyzer#readme",
   "dependencies": {
-    "shell-escape": "^0.2.0",
     "xmlbuilder": "^9.0.4",
     "graceful-fs": "^4.1.11"
   }
