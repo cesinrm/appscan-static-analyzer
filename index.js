@@ -16,14 +16,17 @@
   */
 
   var json = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-  var  appName = json.name;
+  var appName = json.name;
   var pwdLocation = __dirname;
   var xml = builder.create('root');
 
   var applicationObj = {
     'Application': {
       '@name': appName,
-      'Project': { '@language_type': '2', '@path': pwdLocation }
+      'Project': {
+        '@ltd_name': 'javascript',
+        '@path': pwdLocation+"/"+appName+".ppf"
+      }
     }
   }
 
@@ -40,10 +43,13 @@
    var projectObj = {
      'Project': {
        '@default_configuration_name': 'Configuration 1',
-       '@language_type': '2',
+       '@ltd_name': 'javascript',
        '@name': appName,
-       'Configuration': { '@class_path': './;node_modules', '@name': 'Configuration 1' },
-       'Source': { '@exclude': 'false', '@path': '.', '@web': 'true'}
+       '@file_encoding': 'UTF-8',
+       '@file_extension_set_name': 'javascript',
+       'Configuration': { '@name': 'Configuration 1' },
+       'Source': { '@exclude': 'false', '@path': '.', '@web': 'false'},
+       'Source': { '@exclude': 'true', '@path': './node_modules', '@web': 'false'}
      }
    }
 

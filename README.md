@@ -33,8 +33,6 @@ Copy executable to your node application's root folder and then just run:
 
 #### Node packages
 
-
-  >"shell-escape": "^0.2.0"
   >"xmlbuilder": "^9.0.4"
   >"graceful-fs": "^4.1.11"
 
