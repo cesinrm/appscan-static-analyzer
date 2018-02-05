@@ -14,18 +14,13 @@
     var dependencyListFormated = shellescape (argsDependencyListFormated);
   }
   */
-  //const loadJsonFile = require('load-json-file');
   var builder = require('xmlbuilder');
   var fs = require('graceful-fs');
   var shellescape = require('shell-escape');
-  //var json = require('./package.json');
 
-   //appName='';
   var json = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-  //console.log(json);
-  //loadJsonFile('./package.json').then(json => {
   var  appName = json.name;
-  //});
+
   var argPwd = ['pwd'];
   var pwd = shellescape (argPwd);
 
