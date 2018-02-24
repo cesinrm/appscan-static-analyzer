@@ -17,7 +17,7 @@ Copy executable to your node application's root folder and then just run:
   linux/node_app $ ./nodeAppScan
 ```
 
-### Macos
+### Macos 
 
 ```
   macos/node_app $ ./nodeAppScan

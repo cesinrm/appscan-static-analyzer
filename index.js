@@ -16,7 +16,7 @@
   */
 
   var json = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-  var appName = json.name;
+  var  appName = json.name;
   var pwdLocation = __dirname;
   var xml = builder.create('root');
 
